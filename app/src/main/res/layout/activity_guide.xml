@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_start"
+        android:background="@drawable/btn_guide_selector"
+        android:layout_marginBottom="92dp"
+        android:text="@string/start_guide"
+        android:visibility="invisible"
+        android:padding="5dp"
+        android:textColor="@drawable/btn_guide_selectortext"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="20dp">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_pointgroup"
+    android:orientation="horizontal">
+</LinearLayout>
+    <View
+        android:id="@+id/view_red_point"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:background="@drawable/shape_point_red"/>
+</RelativeLayout>
+</RelativeLayout>
