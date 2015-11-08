@@ -27,6 +27,7 @@ public class NoScrollViewPager extends ViewPager {
 		return false;
 	}
 
+
 	/**
 	 * 重写onTouchEvent事件,什么都不用做
 	 */

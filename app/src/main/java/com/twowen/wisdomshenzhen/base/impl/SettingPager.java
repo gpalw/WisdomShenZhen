@@ -26,7 +26,13 @@ public class SettingPager extends BasePager {
         texte.setText("设置");
         texte.setTextColor(Color.RED);
         texte.setTextSize(25);
+
         texte.setGravity(Gravity.CENTER);
+        texte.setVisibility(View.VISIBLE);
+
+
+
+
         //向Framelayout动态添加布局
         rlContent.addView(texte);
     }

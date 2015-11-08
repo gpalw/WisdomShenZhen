@@ -1,0 +1,5 @@
+configurations.create("default")
+artifacts.add("default", file('gson-2.3.1.jar'))
+dependencies {
+    compile files('D:/WisdomShenZhen/libraries/gson-2.3.1.jar')
+}

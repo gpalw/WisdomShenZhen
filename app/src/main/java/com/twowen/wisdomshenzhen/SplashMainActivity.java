@@ -33,11 +33,24 @@ public class SplashMainActivity extends SlidingFragmentActivity {
     private void initFragment(){
         android.support.v4.app.FragmentManager fm =getSupportFragmentManager();
         FragmentTransaction transaction=fm.beginTransaction();//开启事务
-        transaction.replace(R.id.fl_left_menu,new LeftMenuFragment(),FRAGMENT_LEFT_MENU);
-        transaction.replace(R.id.fl_content, new ContentFragment(),FRAGMENT_CONTENT);
+        transaction.replace(R.id.fl_left_menu, new LeftMenuFragment(), FRAGMENT_LEFT_MENU);
+        transaction.replace(R.id.fl_content, new ContentFragment(), FRAGMENT_CONTENT);
 
         transaction.commit();//提交事务
 
+    }
+    //获取侧边栏Fragment
+    public LeftMenuFragment getLeftMenuFragment(){
+        android.support.v4.app.FragmentManager fm=getSupportFragmentManager();
+        LeftMenuFragment fragment= (LeftMenuFragment) fm.findFragmentByTag(FRAGMENT_LEFT_MENU);
+        return fragment;
+    }
+
+    //获取主页面Fragment
+    public ContentFragment getContentFragment(){
+        android.support.v4.app.FragmentManager fm=getSupportFragmentManager();
+        ContentFragment fragment= (ContentFragment) fm.findFragmentByTag(FRAGMENT_CONTENT);
+        return fragment;
     }
 
 
